@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Тестирование</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="../static/tester2.css" th:href="@{/tester2.css}" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body class="page">
+<div class="block">
+  <form method="POST">
+    <p id="quest">Выберите ответ:</p>
+    <input type="text" class="form-control" placeholder="Введите ответ" name="answer"><br>
+    <div>
+      <button type="кнопка" class="btn btn-primary btn-block">Ответить</button>
+    </div>
+  </form>
+</div>
+
+
+<script th:inline="javascript">
+        var quest = document.getElementById("quest");
+
+        /*<![CDATA[*/
+            quest.innerHTML = /*[[${question}]]*/ 'default';
+        /*]]>*/
+
+    </script>
+</body>
+</html>

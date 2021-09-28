@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Выбор тестирования</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="../static/login.css" th:href="@{/login.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body class="login-page">
+        <div class="login-block">
+            <h4>Введите свои данные</h4>
+            <form method="POST">
+                <input type="text" name="name" class="form-control" placeholder="Ваше имя"><br>
+                <input type="text" name="surname" class="form-control" placeholder="Ваша фамилия"><br>
+
+                <div class="form_toggle">
+                    <div class="form_toggle-item item-1">
+                        <input id="fid-1" type="radio" name="test_choice" value="test1" checked>
+                        <label for="fid-1">RADIO</label>
+                    </div>
+                    <div class="form_toggle-item item-2">
+                        <input id="fid-2" type="radio" name="test_choice" value="test2">
+                        <label for="fid-2">INPUT</label>
+                    </div>
+                </div><br>
+
+                <select class="form-control" name="test_choice2" id="select_bar">
+                    <option  th:each="tv : ${test_variants}" th:text="${tv.Test_name}" th:value="${tv.Test_name}"></option>
+                </select>
+
+                <button class="btn btn-primary btn-block" type="submit">НАЧАТЬ ТЕСТИРОВАНИЕ</button>
+            </form>
+        </div>
+
+</body>
+</html>

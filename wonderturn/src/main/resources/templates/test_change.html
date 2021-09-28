@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Изменение теста</title>
+    <link href="../static/test_change.css" th:href="@{/test_change.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5 mb-5" id="main_div">
+    <form method="post">
+        <input type="text" name="question" placeholder="Введите вопрос" class="form-control"><br />
+        <input type="text" name="ans1" placeholder="Введите первый ответ" class="form-control"><br />
+        <input type="text" name="ans2" placeholder="Введите второй ответ" class="form-control"><br />
+        <input type="text" name="ans3" placeholder="Введите третий ответ" class="form-control"><br />
+        <input type="text" name="ans4" placeholder="Введите четвертый ответ" class="form-control"><br />
+        <input type="number" name="right_ans" placeholder="Введите номер правильного ответа " class="form-control"><br />
+        <div>
+            <button type="кнопка" class="btn btn-success">Добавить</button>
+        </div>
+
+    </form>
+    </div>
+</body>
+</html>

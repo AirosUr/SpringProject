@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Изменение теста</title>
+    <link href="../static/login.css" th:href="@{/login.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body class="login-page">
+<div class="login-block">
+    <h4>Введите свои данные</h4>
+    <form method="POST">
+        <input type="number" name="questsCount" class="form-control" placeholder="Количество вопросов для добавления"><br>
+
+        <select class="form-control" name="name" id="select_bar">
+            <option  th:each="tv : ${test_variants}" th:text="${tv.Test_name}" th:value="${tv.Test_name}"></option>
+        </select>
+
+        <button class="btn btn-primary btn-block" type="submit">Добавление вопросов</button>
+    </form>
+</div>
+
+</body>
+</html>

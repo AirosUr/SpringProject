@@ -1,0 +1,56 @@
+.donut{
+    position: relative;
+    margin: auto;
+
+}
+
+.hole, .ring, .segment {
+    position: relative;
+    margin: auto;
+}
+
+label{
+    font-family:Open Sans,sans-serif;
+    color:#768292;
+    letter-spacing:1px;
+    font-size:20px;
+
+}
+
+.page{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.block
+{
+position: relative;
+margin: auto;
+width: 60%;
+top: 100px;
+background-color:#fff;
+padding:60px;
+-webkit-box-shadow:0 3px 50px 0 rgba(0,0,0,.1);
+box-shadow:0 3px 50px 0 rgba(0,0,0,.1);
+text-align:center;
+border-radius:5px;
+}
+.block p
+{
+font-family:Open Sans,sans-serif;
+color:#96a2b2;
+letter-spacing:1px;
+font-size:25px;
+margin-bottom:40px;
+margin-top:28px;
+}
+
+.block .btn-block
+{
+margin-top:30px;
+padding:15px;
+background:#49cafe;
+border-color:#49cafe;
+}

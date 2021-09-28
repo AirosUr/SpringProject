@@ -1,0 +1,12 @@
+#main_div {
+    position: relative;
+    height: 630px;
+    padding: 36px;
+    padding-right: 45px;
+    padding-left: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 4px #8888BF;
+    background-color: #AAAACC;
+    overflow: scroll;
+}
